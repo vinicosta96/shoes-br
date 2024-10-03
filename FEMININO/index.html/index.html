@@ -1,0 +1,208 @@
+
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5 -->
+<html lang="pt-BR">  <!-- Declaração e definição do idioma como português do Brasil -->
+<head>
+    <!-- Importação do Font Awesome para usar ícones -->
+    <script src="https://kit.fontawesome.com/96b74d7798.js" crossorigin="anonymous"></script>
+    <!-- Definição do conjunto de caracteres para o documento -->
+    <meta charset="UTF-8">
+    <!-- Compatibilidade com versões anteriores do Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Configuração da viewport para responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">  
+    <!-- Link para a biblioteca Font Awesome (versão 5.15.4) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
+    <!-- Inclusão do script JavaScript do slider, que será executado após o carregamento do DOM -->
+    <script src="slide.js" defer></script> 
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Loja de calçados ShoesBR</title>
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<header>
+   <!-- Cabeçalho da página com o logotipo -->
+<h1 class="logo">SHOES<span>BR</span></h1>
+
+<!-- Div que contém os botões do cabeçalho -->
+<div class="header-button">
+
+    <!-- Botão do WhatsApp -->
+    <button class="whatsapp-button" aria-label="whatsapp">
+        <!-- Link para iniciar uma conversa no WhatsApp -->
+        <a href="https://api.whatsapp.com/send?phone=5592992343686">
+            <!-- Ícone do WhatsApp -->
+            <i class="fa-brands fa-whatsapp" style="color: #333;"></i>
+        </a>
+        <!-- Espaço para um segundo ícone (não utilizado) -->
+        <i class=""></i>
+    </button>
+
+    <!-- Botão do Carrinho -->
+    <button class="cart-button" aria-label="cart">
+        <!-- Link para a página do carrinho -->
+        <a href="/CARRINHO/index.html">
+            <!-- Ícone do carrinho de compras -->
+            <i class="fa-solid fa-bag-shopping" style="color: #333;"></i>
+        </a>            
+    </button>
+
+    <!-- Botão de Login -->
+    <button class="login-button" aria-label="login">
+        <!-- Link para a página de login -->
+        <a href="/LOGINDEV/index.html/login.html">
+            <!-- Ícone do usuário -->
+            <i class="fa-solid fa-circle-user" style="color: #333;"></i>
+        </a>            
+    </button> 
+        
+
+    </div>
+
+</header> <!-- Fim da seção de cabeçalho da página -->
+
+
+<!-- Navegação principal -->
+<nav>
+    <div class="navbar">
+        <!-- <a> Cria um link que redireciona para a URL especificada -->
+        <a href="/FEMININO/index.html/Feminino.html">FEMININO</a>
+        <a href="masculino.html">MASCULINO</a>
+        <a href="menina.html">MENINA</a>
+        <a href="menino.html">MENINO</a>
+        <a href="tênis.html">TÊNIS</a>
+        <a href="promoções.html">PROMOÇÕES</a>
+        <a href="/LANÇAMENTOS/lançamento.html">LANÇAMENTO</a>
+        <!--</a> Fim do link -->
+    
+
+        <!-- Barra de pesquisa -->
+        <form action="#" method="get">
+            <input class="search-text" type="text" name="search" id="search" placeholder="O que você está procurando ?" required>
+            <button class="search-submit"><i class="fas fa-search"></i></button>
+        </form>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+            <!-- Botão principal do dropdown com o texto "MAIS CATEGORIAS" e um ícone de seta para baixo -->
+            <button class="dropbtn">MAIS CATEGORIAS
+                <i class="fa fa-caret-down"></i> <!-- Ícone de seta indicando um menu suspenso -->
+            </button>
+            
+            <!-- Conteúdo do dropdown que aparece ao clicar no botão -->
+            <div class="dropdown-content">
+                <!-- Links para diferentes categorias de produtos -->
+                <a href="#">PAPETE</a>
+                <a href="#">SALTO ALTO</a>
+                <a href="#">GLADIADORA</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Cards de Sapatos -->
+<section class="destaques">
+    <h2>PRODUTOS EM DESTAQUES</h2> 
+     <!-- Contêiner do carrossel -->
+     <div class="carousel-container">
+        <!-- Contêiner interno do carrossel que agrupa os cards -->
+        <div class="carousel">
+            <div class="card">
+                <img src="/images/sapato2.png" alt="Sapato">
+                <div>
+                    <h1>Nike Zoom Structure</h1>
+                    <h2>Durabilidade e aderência em diferentes superfícies</h2>
+                    <span>R$ 659,99</span>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/sapato1.png" alt="Sapato">
+                <div>
+                    <h1>Nike Air Zoom Pegasus</h1>
+                    <h2>Agilidade com ajuste confortável para o dia a dia</h2>
+                    <span>R$ 699,00</span>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+            </div>  
+            <div class="card">
+                <img src="./images/sapato3.png" alt="Sapato">
+                <div>
+                    <h1>New Balance Unisex</h1>
+                    <h2>Garante conforto aos pés que desafiam as fronteiras</h2>
+                    <span>R$ 449,99</span>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card">      
+                <img src="/images/sapato4.png" alt="Sapato">
+                <div>
+                    <h1>Tênis Yang</h1>
+                    <h2>Exclusivo para praticar atividades físicas</h2>
+                    <span>R$ 589,99</span>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/sapato5.png" alt="Sapato">
+                <div>
+                    <h1>Nike Air Force</h1>
+                    <h2>Confortável, excelente para o dia a dia</h2>
+                    <span>R$ 489,99</span>
+                    <button>Adicionar ao Carrinho</button>
+                </div>     
+            </div>    
+            <div class="card">
+                <img src="/images/sapato6.png" alt="Sapato">
+                <div>
+                    <h1>Nike Air Max 97</h1>
+                    <h2>Confortável, excelente para o dia a dia</h2>
+                    <span>R$ 508,99</span>
+                    <button>Adicionar ao Carrinho</button>
+                </div>     
+            </div>
+        
+        <div class="card">
+            <img src="/images/sapato7.png" alt="Sapato">
+            <div>
+                <h1>Scarpin Fendi Lizard Preto</h1>
+                <h2>O modelo com salto alto e plataforma.</h2>
+                <span>R$ 1.200,00</span>
+                <button>Adicionar ao Carrinho</button>
+            </div>     
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- Rodapé -->
+
+    <!-- Seção de rodapé da página, contendo informações de contato -->
+    <footer>
+    <dl>
+        <!-- <dl> é usado para criar uma lista de definição. Ele é composto por dois tipos principais de elementos:-->
+        
+        <dt>E-mail</dt> 
+        <!-- dt Termo da definição: E-mail -->
+        <dd>email@gmail.com</dd>
+        <!-- dd Descrição correspondente ao termo anterior, que é o endereço de e-mail -->
+        
+        <dt>Telefone</dt>
+        <!-- Termo da definição: Telefone -->
+        <dd>(99) 9 9999-9999</dd>
+        <!-- Descrição correspondente ao termo anterior, que é o número de telefone -->
+    </dl>
+
+    <p>© 2024 ShoesBr Todos os direitos reservados.</p>
+    <!-- Parágrafo com direitos autorais da empresa ShoesBr -->
+</footer>
+
+</body>
+</html>

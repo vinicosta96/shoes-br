@@ -1,0 +1,326 @@
+/* Estilo Global */
+* { 
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Inclui padding e borda na largura/altura */
+}
+  /* Estilização do corpo da página */
+  body {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte da página */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    width: 100%; /* Define a largura da página */
+    height: 100vh; /* Define a altura como 100% da altura da janela */
+    background-color: #ddd; /* Define a cor de fundo da página */
+    box-sizing: border-box; /* Inclui padding e borda na largura/altura */
+    overflow-x: hidden;
+  } 
+ 
+
+
+/* Estilo do cabeçalho */
+header {
+  text-align: center; /* Centraliza o conteúdo */
+  background-color: #ddd; /* Define a cor de fundo */
+  justify-content: space-between;
+  padding: 20px 23px ;
+  display: flex;
+  
+}
+/* Estilo do título principal no cabeçalho */
+header h1 {
+  font-size: 50px /* Define o tamanho da fonte do título */
+}
+
+/* Estilo para o logo */
+.logo {
+  color: #020101; /* Define a cor da parte principal do logo */
+}
+
+/* Estilo para o texto destacado no logo */
+.logo span {
+  color: rgb(0, 92, 99); /* Define a cor do texto dentro do span no logo */
+}
+
+/* Estilo para imagens dentro do logo (se houver) */
+.logo img {
+  width: 100%; /* Define que a imagem ocupará 100% da largura */
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+  overflow: hidden;  /* Impede o overflow de conteúdo */
+  background-color: #333; /* Cor de fundo da barra */
+  text-align: center;/* Centraliza os links da navbar */
+  display: flex; /* Usando flexbox para alinhamento */
+  justify-content: space-between; /* Espaço entre os itens da navbar */
+  align-items: center; /* Alinha verticalmente ex: barra pesquisa */ 
+}
+
+/* Estilo para os links da barra de navegação */
+.navbar a {
+  float: left; /* Coloca os links em linha horizontal */
+  font-size: 15px; /* Define o tamanho da fonte dos links */
+  color: white; /* Cor do texto dos links */
+  padding: 14px 16px; /* Preenchimento interno dos links */
+  text-decoration: none; /* Remove sublinhado dos links */
+  display: block; /* Garante que cada link seja exibido como bloco */
+}
+
+.section h1 {
+
+  font-size: 100px;
+  
+}
+.section {
+
+  text-align: center; /* Centraliza o conteúdo */
+  background-color: #ddd; /* Define a cor de fundo */
+  justify-content: space-between;
+  padding: 20px 23px ;
+  display: flex;
+}
+.login-button, .whatsapp-button  {
+  border: none;
+  padding: 5px 5px;
+  background-color: #ddd;
+  font-size: 30px;
+  cursor: pointer;
+} 
+
+
+.search-text {
+  padding: 10px; /* Preenchimento interno */
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 10px; /* Cantos arredondados */
+  
+}
+
+ .search-submit{
+  border: none; /* Remove borda */
+  background-color: #333; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  cursor: pointer; /* Muda o cursor ao passar por cima */
+  border-radius: 50px; /* Cantos arredondados */
+  width: auto;
+  height: auto;
+  align-items: center ;
+}
+ /* define tamanho aba pesquisar */
+
+
+button:hover { /* botão flutuante (preenchido) */
+  background-color: #fff; /* Altera a cor ao passar o mouse */
+}
+
+
+/* Estilo para o dropdown na navegação */
+.dropdown {
+  float: left; /* Coloca o dropdown na linha dos links */
+  overflow: hidden; /* Impede que o conteúdo vaze */
+}
+
+/* Estilo para o botão do dropdown */
+.dropdown .dropbtn {
+  font-size: 20px; /* Tamanho da fonte do botão */
+  border: none; /* Remove borda */
+  outline: none; /* Remove borda ao clicar */
+  color: white; /* Cor do texto do botão */
+  padding: 14px 16px; /* Preenchimento interno */
+  background-color: inherit; /* Herda o fundo da navbar */
+  font-family: inherit; /* Herda a fonte global */
+  margin: 0; /* Remove margem extra */
+}
+
+/* Estilo ao passar o mouse sobre os links ou dropdown */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(207, 207, 207); /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilo do conteúdo do dropdown */
+.dropdown-content {
+  display: none; /* Inicialmente escondido */
+  position: absolute; /* Posição relativa à navbar */
+  background-color: #f9f9f9; /* Cor de fundo do dropdown */
+  min-width: 160px; /* Largura mínima */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra em volta */
+  z-index: 1; /* Coloca o dropdown acima de outros elementos */
+}
+
+/* Estilo dos links dentro do dropdown */
+.dropdown-content a {
+  float: none; /* Links dentro do dropdown ficam em bloco */
+  color: black; /* Cor do texto */
+  padding: 12px 16px; /* Preenchimento interno */
+  text-decoration: none; /* Remove sublinhado */
+  display: block; /* Exibe cada link como bloco */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilo ao passar o mouse sobre links dentro do dropdown */
+.dropdown-content a:hover {
+  background-color: #ddd; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Exibe o conteúdo do dropdown ao passar o mouse */
+.dropdown:hover .dropdown-content {
+  display: block; /* Torna o conteúdo visível */
+}
+
+/* Estilo para a estrutura de layout */
+.row {
+  padding: 0 20px; /* Define o preenchimento interno horizontal */
+  display: table; /* Define que o container será uma tabela */
+}
+
+/* Estilo para as seções principais */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px ;
+  background-color: #f4f4f4; /* Cor de fundo da seção */
+}
+
+
+/* Estilo do rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilo dos títulos no rodapé */
+footer dt {
+  font-weight: bold; /* Destaca o título com negrito */
+}
+
+/* Estilo das descrições no rodapé */
+footer dd {
+  margin-left: 0; /* Remove margem esquerda */
+}
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do card */
+  width: 300px; /* Largura do card */
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+  transition: transform 0.2s ease-in-out; /* Efeito ao passar o mouse */
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  cursor: pointer;
+  
+}
+
+.card div {
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:  4px;
+  height: 50%;
+}
+
+.card h1 {
+  font-size: 1.2rem;  
+}
+
+.card h2 {
+  font-size: .9rem;
+  color: #aaaa;
+}
+
+.card button {
+  background-color: #333;
+  height: 30px;
+  border: none;
+  padding: 4px;
+  width: 80%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+button {
+    cursor: pointer;
+}
+
+/* Estilo para a navegação manual e automática */
+.nav-manual, .nav-auto {
+  position: absolute; /* Posição absoluta em relação ao slider */
+  width: 100%; /* Largura total */
+  margin-top: 43%; /* Margem superior ajustada */
+  display: flex; /* Flexbox para centralizar os botões */ 
+  justify-content: center; /* Centraliza os botões horizontalmente */
+}
+
+/* Estilo dos botões de navegação manual e automática */
+.nav-manual .manual-btn, .nav-auto div {
+  border: 1px solid #333; /* Borda com cor #333 */
+  padding: 6px; /* Preenchimento maior para botões maiores */
+  border-radius: 100px ; /* Formato circular */
+  cursor: pointer; /* Altera o cursor para o formato "mão" */
+  transition: 0.2s; /* Suaviza as transições ao passar o mouse no círculo */
+  background-color: #ddd; /* Cor de fundo */
+}
+/* Distanciamento dos botões e centralização */
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+  margin-right: 1px; /* Margem entre os botões */
+}
+
+/* Estilo ao passar o mouse sobre os botões de navegação manual */
+.nav-manual .manual-btn:hover {
+  background-color: #333; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo ao passar o mouse sobre os botões */
+.nav-manual .manual-btn:hover, .nav-auto div:hover {
+  background-color: #333; /* Cor de fundo mais escura ao passar o mouse */
+  border-color: #333 /* Altera a cor da borda ao passar o mouse */
+}
+
+/* Define a cor do botão correspondente ao slide ativo */
+#radio1:checked ~ .nav-auto .auto-btn1,
+#radio2:checked ~ .nav-auto .auto-btn2, 
+#radio3:checked ~ .nav-auto .auto-btn3 {
+  background-color: #333; /* Cor do botão ativo */
+}
+
+/* Movimenta os slides quando o botão de rádio é selecionado */
+#radio1:checked ~ .primeiro {
+  margin-left: 0%; /* Primeiro slide à vista */
+}
+
+#radio2:checked ~ .primeiro {
+  margin-left: -25%; /* Move para o segundo slide */
+}
+
+#radio3:checked ~ .primeiro {
+  margin-left: -50%; /* Move para o terceiro slide */
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media screen and (max-width: 900px) {
+    img.desktop {
+      display: none; /* Esconde imagens desktop em telas menores */
+    }
+    .img-mobile {
+      display: block; /* Exibe imagens móveis */
+    }
+    .nav-auto, .nav-manual {
+      margin-top: 60%; /* Ajusta a posição dos botões em telas menores */
+    }
+}
+
+
+

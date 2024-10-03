@@ -1,0 +1,192 @@
+/* Importação da fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+/* Estilo Geral */
+/* Remove margem, padding e aplica box-sizing para todo o documento */
+* {
+    font-family: 'Poppins', sans-serif; /* Define a fonte global */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho da página */
+header {
+    text-align: center; /* Centraliza o conteúdo dentro do cabeçalho */
+    background-color: #ddd; /* Cor de fundo do cabeçalho */
+    justify-content: space-between; /* Espaçamento entre os elementos */
+    padding: 20px 23px; /* Espaçamento interno */
+    display: flex; /* Usa flex para organizar elementos */
+}
+
+/* Estilo do título principal no cabeçalho */
+header h1 {
+    font-size: 50px; /* Define o tamanho do título */
+}
+
+/* Logo do cabeçalho */
+.logo {
+    color: #020101; /* Define a cor principal do logo */
+}
+
+/* Texto em destaque no logo */
+.logo span {
+    color: rgb(0, 92, 99); /* Cor específica para o texto dentro do span */
+}
+
+/* Botões no cabeçalho (login e WhatsApp) */
+.home-button, .login-button, .whatsapp-button {
+    border: none; /* Remove borda dos botões */
+    padding: 5px 5px; /* Espaçamento interno */
+    background-color: #ddd; /* Cor de fundo dos botões */
+    font-size: 30px; /* Tamanho da fonte dos botões */
+    cursor: pointer; /* Cursor de mão para indicar clicável */
+}
+
+/* Container principal do conteúdo da página */
+#container {
+    height: 100vh; /* Altura total da viewport */
+    width: 100%; /* Largura total da viewport */
+    display: flex; /* Usa flex para centralização */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #333; /* Cor de fundo */
+}
+
+/* Formulário de Login */
+#login_form {
+    display: flex; /* Usa flex para organizar elementos */
+    flex-direction: column; /* Organiza elementos em coluna */
+    height: fit-content; /* Altura ajusta ao conteúdo */
+    background-color: var(--color-light-50); /* Cor de fundo (variável não especificada) */
+    padding: 30px 40px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    gap: 30px; /* Espaçamento entre os elementos */
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336); /* Sombra */
+    background: #ddd; /* Cor de fundo do formulário */
+}
+
+/* Cabeçalho do formulário */
+#form_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaçamento entre os elementos do cabeçalho */
+}
+
+/* Estilo do título no cabeçalho do formulário */
+#form_header h1 {
+    font-size: 40px; /* Tamanho do título */
+    position: relative; /* Usado para o pseudo-elemento ::before */
+}
+
+/* Linha decorativa abaixo do título */
+#form_header h1::before {
+    position: absolute;
+    content: '';
+    width: 40%; /* Largura da linha */
+    height: 3px; /* Altura da linha */
+    background-color: var(--color-purple-50); /* Cor definida por variável (não especificada) */
+    bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Ícone de modo (ex: claro/escuro) */
+#mode_icon {
+    cursor: pointer; /* Cursor de mão para indicar clicável */
+    font-size: 20px; /* Tamanho do ícone */
+}
+
+/* Redes Sociais no formulário */
+#social_media {
+    display: flex; /* Organiza os ícones em linha */
+    justify-content: space-around; /* Espaçamento entre ícones */
+}
+
+/* Imagens das redes sociais */
+#social_media img {
+    width: 35px; /* Tamanho das imagens */
+}
+
+/* Efeito ao passar o mouse sobre as imagens */
+#social_media img:hover {
+    transform: scale(1.2); /* Aumenta 20% do tamanho */
+}
+
+/* Container dos inputs do formulário */
+#inputs {
+    display: flex; /* Usa flex para organizar */
+    align-items: center; /* Centraliza os inputs */
+    justify-content: center;
+    flex-direction: column; /* Organiza os inputs em coluna */
+    gap: 20px; /* Espaçamento entre os inputs */
+}
+
+/* Estilo das labels dos inputs */
+.input-box>label {
+    font-size: 14px; /* Tamanho do texto das labels */
+    color: #000; /* Cor do texto das labels */
+}
+
+/* Container do campo de entrada */
+.input-field {
+    display: flex; /* Organiza ícone e campo de entrada em linha */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 15px; /* Espaçamento entre ícone e campo */
+    padding: 3px;
+    border-bottom: 1px solid #333; /* Borda inferior */
+    cursor: text; /* Cursor de texto ao passar por cima */
+}
+
+/* Ícone dentro do campo de entrada */
+.input-field i {
+    font-size: 18px; /* Tamanho do ícone */
+    cursor: text; /* Cursor de texto */
+    color: #000000; /* Cor do ícone */
+}
+
+/* Campo de entrada de texto */
+.input-field input {
+    border: none; /* Remove borda */
+    width: 260px; /* Largura do input */
+    background-color: transparent; /* Fundo transparente */
+    font-size: 18px; /* Tamanho do texto */
+    padding: 0px 5px; /* Espaçamento interno */
+}
+
+/* Remove contorno ao focar */
+.input-field input:focus {
+    outline: none;
+}
+
+/* Link "Esqueceu sua senha?" */
+#forgot_password a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #333; /* Cor do link */
+    font-size: 12px; /* Tamanho do texto */
+}
+
+/* Cor ao passar o mouse no link */
+#forgot_password a:hover {
+    color: #000; /* Muda para preto */
+}
+
+/* Botão de login */
+#login_button {
+    border: none; /* Remove borda */
+    background: #333; /* Cor de fundo */
+    padding: 7px; /* Espaçamento interno */
+    border-radius: 3px; /* Bordas arredondadas */
+    color: #ddd; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 18px; /* Tamanho do texto */
+    cursor: pointer; /* Cursor de mão */
+}
+
+/* Efeito ao passar o mouse no botão */
+#login_button:hover {
+    transform: scale(1.05); /* Aumenta 5% do tamanho */
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos aplicados para telas com largura máxima de 768px (ex.: tablets e smartphones) */
+}
