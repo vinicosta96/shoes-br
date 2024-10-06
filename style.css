@@ -462,6 +462,7 @@ button:focus {
 .card img {
   max-width: 100%; /* Imagem ocupa 100% da largura do card */
   border: 1px solid  #808080; /* Borda da imagem */
+  cursor: pointer;
 }
 
 .card h3 {
@@ -477,23 +478,80 @@ button:focus {
 footer {
   background-color: #333; /* Define a cor de fundo do footer como um cinza escuro, criando um contraste forte com o texto branco. */
   color: white; /* Define a cor do texto como branco, garantindo boa legibilidade sobre o fundo escuro. */
-  text-align: center; /* Centraliza o texto dentro do footer, proporcionando uma aparência organizada e simétrica. */
-  padding: 20px; /* Adiciona 20 pixels de padding em todas as direções, criando espaçamento interno e melhorando a estética. */
-  position: relative; /* Define a posição como relativa, permitindo que o footer se posicione em relação ao seu local no fluxo do documento. */
-  bottom: 0; /* Define a posição do footer na parte inferior do seu elemento pai, mas não o fixa na tela, permitindo que ele role com o conteúdo. */
-  width: 100%; /* Define a largura do footer como 100% da largura do elemento pai, garantindo que ele ocupe toda a largura disponível. */
+  padding: 10px 0 0;
+  margin-top: 0;
+}
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-logo img{
+  width: 200px;
+  padding-bottom: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.footer-logo p{
+  width: 300px;
+  color: #fff;
+  margin: 0 auto;
+}
+.footer-links h3, .footer-contact h3{
+  margin-top: 20px;
+}
+.footer-links, .footer-contact{
+  margin-top: 20px;
+}
+.footer-links li{
+  margin-bottom: 10px;
+}
+.footer a{
+  color: #fff;
+}
+.footer-contact li{
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+  color: #fff;
+  font-weight: 300;
+  justify-content: center;
+}
+.copyright {
+  background-color: #808080;
+  padding: 10px;
+  text-align: center;
+}
+li{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+@media (min-width:900px){
+  .footer-content{
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  footer{
+    padding: 20px 0 0;
+  }
+  .footer-contact,.footer-links li{
+    justify-content: start;
+  }
+  .footer-logo{
+    border-right: 1px solid #fff;
+    padding-right: 100px;
+  }
 }
 
-
-/* Estilo dos títulos no rodapé */
-footer dt {
-  font-weight: bold; /* Destaca o título com negrito */
-}
-
-/* Estilo das descrições no rodapé */
-footer dd {
-  margin-left: 0; /* Remove margem esquerda */
-}
 
 /* Estilo do contêiner do carrossel */
 .carousel-container {
@@ -534,8 +592,11 @@ footer dd {
   header h1 {
     font-size: 35px; /* Reduz o tamanho do título */
   }
+  .banner  {
+  width: 50%;
+  align-content: center;
 }
-
+}
 
 /* @media para celulares (até 768px) */
 @media only screen and (max-width: 768px) {
@@ -552,8 +613,12 @@ footer dd {
   /* Ajusta o layout do slider */
   .slide-box {
     width: 100%; /* Cada slide ocupa 100% da tela */
-  }
-
+  
+}
+.banner-footer {
+  width: 100%;
+  align-content: center;
+}
   /* Ajusta o layout dos cards */
   .card-container {
     flex-direction: column; /* Empilha os cards verticalmente */
