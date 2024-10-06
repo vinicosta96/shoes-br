@@ -1,0 +1,589 @@
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5 -->
+<html lang="pt-BR">  <!-- Declaração e definição do idioma como português do Brasil -->
+<head>
+    <!-- Importação do Font Awesome para usar ícones -->
+    <script src="https://kit.fontawesome.com/96b74d7798.js" crossorigin="anonymous"></script>
+    <!-- Definição do conjunto de caracteres para o documento -->
+    <meta charset="UTF-8">
+    <!-- Compatibilidade com versões anteriores do Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Configuração da viewport para responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Link para a biblioteca Font Awesome (versão 5.15.4) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Loja de calçados ShoesBR</title>
+    <title>Produtos</title>
+</head>
+
+<header>
+    <h1 class="logo">SHOES<span>BR</span></h1>
+
+    <!-- Div que contém os botões do cabeçalho -->
+    <div class="header-button">
+
+        <button class="home-button" aria-label="login"></button>
+            <button class="home-button" aria-label="cart">
+                <a href="/index.html">
+                    <i class="fa-solid fa-house" style="color: #333;"></i>
+                </a>
+    
+        <!-- Botão do WhatsApp -->
+        <button class="whatsapp-button" aria-label="whatsapp">
+            <!-- Link para iniciar uma conversa no WhatsApp -->
+            <a href="https://api.whatsapp.com/send?phone=5592992343686">
+                <!-- Ícone do WhatsApp -->
+                <i class="fa-brands fa-whatsapp" style="color: #333;"></i>
+            </a>
+            <!-- Espaço para um segundo ícone (não utilizado) -->
+            <i class=""></i>
+        </button>
+    
+        <!-- Botão do Carrinho -->
+        <button class="cart-button" aria-label="cart">
+            <!-- Link para a página do carrinho -->
+            <a href="/CARRINHO/index.html">
+                <!-- Ícone do carrinho de compras -->
+                <i class="fa-solid fa-bag-shopping" style="color: #333;"></i>
+            </a>            
+        </button>
+    
+        <!-- Botão de Login -->
+        <button class="login-button" aria-label="login">
+            <!-- Link para a página de login -->
+            <a href="/LOGINDEV/index.html/login.html">
+                <!-- Ícone do usuário -->
+                <i class="fa-solid fa-circle-user" style="color: #333;"></i>
+            </a>            
+        </button> 
+            
+    
+        </div>
+    
+    </header> <!-- Fim da seção de cabeçalho da página -->
+    
+    
+    <!-- Navegação principal -->
+    <nav>
+        <div class="navbar">
+            <!-- <a> Cria um link que redireciona para a URL especificada -->
+            <a href="/FEMININO/index.html/">FEMININO</a>
+            <a href="masculino.html">MASCULINO</a>
+            <a href="menina.html">MENINA</a>
+            <a href="menino.html">MENINO</a>
+            <a href="tênis.html">TÊNIS</a>
+            <a href="promoções.html">PROMOÇÕES</a>
+            <a href="/LANÇAMENTOS/lançamento.html">LANÇAMENTO</a>
+            <!--</a> Fim do link -->
+        
+    
+            <!-- Barra de pesquisa -->
+            <form action="#" method="get">
+                <input class="search-text" type="text" name="search" id="search" placeholder="O que você está procurando ?" required>
+                <button class="search-submit"><i class="fas fa-search"></i></button>
+            </form>
+    
+            <!-- Dropdown Menu -->
+            <div class="dropdown">
+                <!-- Botão principal do dropdown com o texto "MAIS CATEGORIAS" e um ícone de seta para baixo -->
+                <button class="dropbtn">MAIS CATEGORIAS
+                    <i class="fa fa-caret-down"></i> <!-- Ícone de seta indicando um menu suspenso -->
+                </button>
+                
+                <!-- Conteúdo do dropdown que aparece ao clicar no botão -->
+                <div class="dropdown-content">
+                    <!-- Links para diferentes categorias de produtos -->
+                    <a href="#">PAPETE</a>
+                    <a href="#">SALTO ALTO</a>
+                    <a href="#">GLADIADORA</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <!-- Área da imagem e thumbnails do produto -->
+                <div class="left-side">
+                    <div class="items">
+                        <div class="select-image">
+                            <img src="/images/produto5_2.avif" alt="Imagem do Produto">
+                        </div>
+                        <div class="tumbnails">
+                            <div class="tumbnail">
+                                <img src="/images/produto5_1.avif" alt="Miniatura 1">
+                            </div>
+                            <div class="tumbnail">
+                                <img src="/images/produto5_3.avif" alt="Miniatura 2">
+                            </div>
+                            <div class="tumbnail">
+                                <img src="/images/produto5_4.avif" alt="Miniatura 3">
+                            </div>
+                            <div class="tumbnail">
+                                <img src="/images/produto5_5.avif" alt="Miniatura 4">
+                            </div>
+                            <div class="tumbnail">
+                                <img src="/images/produto5_6.avif" alt="Miniatura 4">
+                            </div>
+                            <div class="tumbnail">
+                                <img src="/images/produto5_7.avif" alt="Miniatura 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Área de descrição e compra do produto -->
+                <div class="right-side">
+                    <h6>Tênis Nike LeBron Witness 8 Masculino</h6>
+                    <h4>Basquete</h4>
+                    <div class="rating">
+                        <span class="stars">
+                            ★★★★☆               
+                  </span>     
+                    <span class="review-count">(4 avaliações)</span> 
+                  </div>              
+        <div>
+ </div>
+                    <p>Quando você pisa no chão, que tipo de performance deseja ter? Pare o show com este LeBron Witness 8 e mostre que não há limites para seu talento e habilidades em grande escala. Este calçado elegante e ousadamente esculpido oferece estabilidade ao explodir e aterrissagens suaves quando você volta ao chão, permitindo que chefões como você e LeBron saltem, freiem e saltem de linha de base a linha de base.Uma passada elástica para qualquer corrida, a sensação familiar e perfeita do Peg retorna para ajudá-lo a atingir seus objetivos. Esta versão marcante tem a mesma capacidade de resposta que você adora, mas com melhor conforto nas áreas sensíveis do pé, como o arco e os dedos. Esteja correndo longas maratonas, fazendo uma sessão de velocidade antes do pôr do sol ou pulando em um passeio espontâneo em grupo, ainda é o corredor de estrada estabelecido no qual você pode confiar, dia após dia, corrida após corrida.
+                    </p>
+                    <span class="price">R$ 949,99</span>
+                    <span class="off">R$ 1.090,99</span>
+                    <!-- Seção de Avaliação -->
+    
+   
+
+
+
+                       <!-- Seção de Seleção de Tamanho -->
+                    <div class="size-selector">
+                        <label for="sizes">Escolha o tamanho:</label>
+                        <div class="sizes" id="sizes">
+                            <button class="size-btn">38</button>
+                            <button class="size-btn">39</button>
+                            <button class="size-btn">40</button>
+                            <button class="size-btn">41</button>
+                            <button class="size-btn">42</button>
+                        </div>
+                    </div>
+                        <!-- Seção para seleção de quantidade -->
+                        <div class="quantity-selector">
+                            <button id="decrease-quantity" class="quantity-btn">-</button>
+                            <input type="text" id="quantity" value="1" readonly>
+                            <button id="increase-quantity" class="quantity-btn">+</button>
+                        </div>
+
+                        <!-- Botão "Adicionar ao Carrinho" -->
+                        <button id="add-to-cart" class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+
+                    <!-- Exibe mensagem ao adicionar ao carrinho -->
+                    <p id="cart-result"></p>
+                </div>
+            </div>
+        </section>
+        <style>
+ body {
+
+font-family: 'Poppins', sans-serif;  /* Define a fonte da página */
+margin: 0; /* Remove margens padrão */
+padding: 0; /* Remove o preenchimento padrão */
+width: 100%; /* Define a largura da página */
+height: 100vh; /* Define a altura como 100% da altura da janela */
+background-color: #ddd; /* Define a cor de fundo da página */
+box-sizing: border-box; /* Inclui padding e borda na largura/altura */
+overflow-x: hidden; /* Oculta qualquer conteúdo que exceda a largura do elemento no eixo horizontal (x). Isso é útil para evitar que barras de rolagem apareçam e para garantir que o conteúdo que se estende além da borda direita do container não seja visível. */ 
+ }
+
+/* Estilo do cabeçalho */
+header {
+  text-align: center; /* Centraliza o conteúdo */
+  background-color: #ddd; /* Define a cor de fundo */
+  justify-content: space-between; /* Distribui os itens dentro do container flexível, colocando espaço igual entre eles, alinhando o primeiro item ao início e o último ao final do container. */
+  padding: 20px 23px; /* Define um preenchimento de 20 pixels na parte superior e inferior, e 23 pixels à esquerda e à direita, criando um espaço interno ao redor do conteúdo. */
+  display: flex; /* Define o container como um flex container, permitindo que seus filhos sejam dispostos de forma flexível. */
+
+  
+}
+/* Estilo do título principal no cabeçalho */
+header h1 {
+  font-size: 50px ;/* Define o tamanho da fonte do título */
+  
+}
+
+h2 {
+  font-size: 18px; /* Tamanho da fonte */
+  color: #020101; /* Cor do texto */
+  margin-top: 10px; /* Espaço acima do título */
+  margin-bottom: 0; /* Remove margem abaixo do título */
+  text-align: center; /* Alinha o texto à esquerda */
+}
+
+/* Estilo para o logo */
+
+
+/* Estilo para o texto destacado no logo */
+.logo span {
+  color: rgb(0, 92, 99); /* Cor específica para o texto dentro do span */
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+  overflow: hidden;  /* Impede o overflow de conteúdo */
+  background-color: #333; /* Cor de fundo da barra */
+  text-align: center;/* Centraliza os links da navbar */
+  display: flex; /* Usando flexbox para alinhamento */
+  justify-content: space-between; /* Espaço entre os itens da navbar */
+  align-items: center; /* Alinha verticalmente ex: barra pesquisa */ 
+}
+
+/* Estilo para os links da barra de navegação */
+.navbar a {
+  float: left; /* Coloca os links em linha horizontal */
+  font-size: 15px; /* Define o tamanho da fonte dos links */
+  color: white; /* Cor do texto dos links */
+  padding: 14px 16px; /* Preenchimento interno dos links */
+  text-decoration: none; /* Remove sublinhado dos links */
+  display: block; /* Garante que cada link seja exibido como bloco */
+}
+.home-button, .login-button, .whatsapp-button, .cart-button {
+  border: none; /* Remove a borda padrão dos botões */
+  padding: 5px 5px; /* Define um preenchimento interno de 5 pixels em todas as direções (cima e baixo, esquerda e direita) */
+  background-color: transparent; /* Define a cor de fundo como transparente, para que o botão não tenha uma cor visível */
+  font-size: 30px; /* Define o tamanho da fonte como 30 pixels, tornando o texto do botão grande */
+  cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+}
+
+
+
+.search-text { /*campos de entrada de texto destinados a pesquisas*/
+  padding: 10px; /* Preenchimento interno */
+  border: 1px solid #ddd; /* Borda */
+  border-radius: 10px; /* Cantos arredondados */
+  
+}
+
+.search-submit {
+  border: none; /* Remove borda */
+  background-color: #333; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  cursor: pointer; /* Muda o cursor ao passar por cima */
+  width: auto; /* Define a largura do elemento como automática */
+  height: auto; /* Define a altura do elemento como automática */
+  align-items: center; /* Alinha os itens dentro do elemento ao centro */
+  padding: 10px 15px; /* Adiciona preenchimento interno */
+  border-radius: 5px; /* Arredonda as bordas do botão */
+  font-size: 1rem; /* Tamanho da fonte */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+.search-submit:hover {
+  background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+
+ 
+button:hover { /* botão flutuante (preenchido) */
+cursor: pointer;   /* Define que o cursor deve mudar para uma mão ao passar sobre o elemento, indicando que é clicável */
+
+}
+
+/* Estilo para o dropdown na navegação */
+.dropdown { /*Um dropdown (ou menu suspenso) é um elemento de interface gráfica em websites*/
+  float: left; /* Coloca o dropdown na linha dos links */
+  overflow: hidden; /* Impede que o conteúdo vaze */
+}
+
+/* Estilo para o botão do dropdown */
+.dropdown .dropbtn {
+  font-size: 16px; /* Tamanho da fonte do botão */
+  border: none; /* Remove borda */
+  outline: none; /* Remove borda ao clicar */
+  color: white; /* Cor do texto do botão */
+  padding: 14px 16px; /* Preenchimento interno */
+  background-color: inherit; /* Herda o fundo da navbar */
+  font-family: inherit; /* Herda a fonte global */
+  margin: 0; /* Remove margem extra */
+}
+
+/* Estilo ao passar o mouse sobre os links ou dropdown */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(207, 207, 207); /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilo do conteúdo do dropdown */
+.dropdown-content {
+  display: none; /* Inicialmente escondido */
+  position: absolute; /* Posição relativa à navbar */
+  background-color: #f9f9f9; /* Cor de fundo do dropdown */
+  min-width: 160px; /* Largura mínima */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra em volta */
+  z-index: 1; /* Coloca o dropdown acima de outros elementos */
+}
+
+/* Estilo dos links dentro do dropdown */
+.dropdown-content a {
+  float: none; /* Links dentro do dropdown ficam em bloco */
+  color: black; /* Cor do texto */
+  padding: 12px 16px; /* Preenchimento interno */
+  text-decoration: none; /* Remove sublinhado */
+  display: block; /* Exibe cada link como bloco */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilo ao passar o mouse sobre links dentro do dropdown */
+.dropdown-content a:hover {
+  background-color: #ddd; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Exibe o conteúdo do dropdown ao passar o mouse */
+.dropdown:hover .dropdown-content {
+  display: block; /* Torna o conteúdo visível */
+}
+
+
+
+.container {
+    display: flex;
+   
+    align-items: center;
+    width: 90%;
+    height: calc(100vh - 85px)
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.right-side {
+    width: 100%;
+}
+.items {
+    align-self: flex-end ;
+}
+.select-image {
+    max-width: 800px;
+
+    
+}
+.select-image img {
+    width: 79%;
+    border-radius: 10px; 
+    border-radius: 10px;
+    border: 3px solid #ddd; /* Borda padrão cinza */
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.select-image img:hover {
+    transform: scale(1.1);
+    border-color: #333; /* Borda azul ao passar o mouse */
+}
+
+            
+.tumbnails {
+    display: flex;
+    max-width: 800px;
+    gap: 10px ;
+    border-color: #8080 ;
+}
+.tumbnail img {
+    width: 100%;
+    border-radius: 10px;  
+}
+
+.tumbnail img {
+    width: 88px;
+    border-radius: 10px;
+    border: 3px solid #ddd; /* Borda padrão cinza */
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre as miniaturas */
+.tumbnail img:hover {
+    transform: scale(2.2);
+    border-color: #333; /* Borda azul ao passar o mouse */
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.off {
+    font-size: 20px;
+    color: #FF6347;
+    text-decoration: line-through; 
+    margin-left: 10px;
+    margin-bottom: 20px;
+    
+}
+.rating {
+    display: flex;
+    align-items: center; /* Alinha a avaliação e a contagem verticalmente */
+    margin-top: 10px;   /* Espaço acima da seção de avaliação */
+}
+
+.stars {
+    font-size: 20px;    /* Tamanho das estrelas */
+    color: #f39c12;     /* Cor das estrelas (pode ser ajustada) */
+    
+}
+
+.review-count {
+    margin-left: 10px;  /* Espaço entre as estrelas e a contagem */
+    font-size: 16px;    /* Tamanho da fonte da contagem */
+    color: #777;        /* Cor da contagem (pode ser ajustada) */
+}
+
+
+.size-selector {
+            margin-bottom: 20px;
+        }
+
+        .size-selector label {
+            font-weight: bold;
+        }
+
+        .sizes {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .size-btn {
+            background-color: #f5f5f5;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .size-btn:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .size-btn.active {
+            background-color: #333;
+            color: #fff;
+        }
+h1 {
+    color: #333;
+    margin: 10px 0;
+}
+h6 {
+    font-size: 30px;
+    position: relative;
+    margin: 10px 0;
+}
+h4 {
+    margin: 10px 0;
+}
+
+.right-side {
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 800px; /* Define a largura máxima */
+    margin: 0 auto;   /* Centraliza o contêiner horizontalmente */
+}
+
+.right-side p {
+    margin: 0 0 20px; /* Adiciona margem abaixo do parágrafo */
+    line-height: 1.5;  /* Aumenta o espaço entre linhas para melhor legibilidade */
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity-selector input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+.quantity-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+ }
+.quantity-btn:hover {
+    background-color: #555;
+}
+
+.add-to-cart {
+
+
+        background-color: #333; /* Cor de fundo */
+        color: white; /* Cor do texto */
+        border: none;
+        padding: 15px 35px; /* Ajusta a altura e largura do botão */
+        text-align: center;
+        font-size: 14px; /* Diminui o tamanho da fonte */
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+        width: 320px; /* Define uma largura menor */ 
+}
+
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+#cart-result {
+    #cart-result {
+        margin-top: 10px; /* Espaçamento acima do texto */
+        font-size: 18px;
+        color: #00FF7F;
+        display: none;
+        /* Remover position: absolute; */
+    }
+}
+        </style>
+
+
+
+<script>
+    // Controle de quantidade
+    let quantityInput = document.getElementById('quantity');
+    let decreaseButton = document.getElementById('decrease-quantity');
+    let increaseButton = document.getElementById('increase-quantity');
+
+    decreaseButton.addEventListener('click', () => {
+        let currentQuantity = parseInt(quantityInput.value);
+        if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+        }
+    });
+
+    increaseButton.addEventListener('click', () => {
+        let currentQuantity = parseInt(quantityInput.value);
+        quantityInput.value = currentQuantity + 1;
+    });
+
+    // Ação do botão "Adicionar ao Carrinho"
+    document.getElementById('add-to-cart').addEventListener('click', () => {
+        let selectedQuantity = quantityInput.value;
+        document.getElementById('cart-result').textContent = `Você adicionou ${selectedQuantity} item(s) ao carrinho com sucesso!`;
+    });
+</script>
+</main>
+</body>
+</html>
