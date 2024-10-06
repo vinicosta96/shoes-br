@@ -12,7 +12,10 @@
     <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="style.css">  
     <!-- Link para a biblioteca Font Awesome (versão 5.15.4) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
     <!-- Inclusão do script JavaScript do slider, que será executado após o carregamento do DOM -->
     <script src="slide.js" defer></script> 
     <!-- Título da página exibido na aba do navegador -->
@@ -152,74 +155,77 @@
 
 <!-- Cards de Sapatos -->
 <section class="destaques">
-    <h2>PRODUTOS EM DESTAQUES</h2> 
-     <!-- Contêiner do carrossel -->
-     <div class="carousel-container">
-        <!-- Contêiner interno do carrossel que agrupa os cards -->
-        <div class="carousel">
-            <div class="card">
-                <img src="./images/sapato2.png" alt="Sapato">
+             <h2>PRODUTOS EM DESTAQUES</h2> 
+                 <!-- Contêiner do carrossel -->
+                 <div class="carousel-container">
+                 <!-- Contêiner interno do carrossel que agrupa os cards -->
+                    <div class="carousel">
+                     <div class="card">           
+                  <a href="/PRODUTOS/produto1.html">  
+                    <img src="./images/produto1_7.avif" alt="Sapato">
+                  </a>                     
                 <div>
-                    <h1>Nike Zoom Structure</h1>
-                    <h2>Durabilidade e aderência em diferentes superfícies</h2>
-                    <span>R$ 659,99</span>
-                    <button>Adicionar ao Carrinho</button>
+                    <h3>Tênis Nike Structure</h3>
+                    <p>Durabilidade e aderência em diferentes superfícies</p>
+                    <span>R$ 664,99</span>
+                    <button onclick="window.location.href='link-adicionar-carrinho.html';">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/sapato1.png" alt="Sapato">
+                <a href="/PRODUTOS/produto2.html">
+                <img src="./images/produto2.6.avif" alt="Sapato">
+            </a>
                 <div>
-                    <h1>Nike Air Zoom Pegasus</h1>
-                    <h2>Agilidade com ajuste confortável para o dia a dia</h2>
-                    <span>R$ 699,00</span>
+                    <h3>Nike Air Zoom Pegasus</h3>
+                    <p>Agilidade com ajuste confortável para o dia a dia</p>
+                    <span>R$ 329,99</span>
                     <button>Adicionar ao Carrinho</button>
                 </div>
             </div>  
             <div class="card">
-                <img src="./images/sapato3.png" alt="Sapato">
+                <a href="/PRODUTOS/produto3.html">
+                <img src="./images/produto3_2.avif" alt="Sapato">
+            </a>
                 <div>
-                    <h1>New Balance Unisex</h1>
-                    <h2>Garante conforto aos pés que desafiam as fronteiras</h2>
+                    <h3>Futura x Women's Nike</h3>
+                    <p>Garante conforto aos pés que desafiam as fronteiras</p>
                     <span>R$ 449,99</span>
                     <button>Adicionar ao Carrinho</button>
                 </div>
             </div>
-            <div class="card">      
-                <img src="./images/sapato4.png" alt="Sapato">
+            <div class="card">   
+                <a href="/PRODUTOS/produto4.html">  
+                <img src="./images/produto4_1.avif" alt="Sapato">
+            </a> 
                 <div>
-                    <h1>Tênis Yang</h1>
-                    <h2>Exclusivo para praticar atividades físicas</h2>
-                    <span>R$ 589,99</span>
+                    <h3>Nike Pegasus</h3>
+                    <p>Exclusivo para corridas e atividades físicas</p>
+                    <span>R$ 474,99</span>
                     <button>Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/sapato5.png" alt="Sapato">
+                <a href="/PRODUTOS/produto5.html">
+                <img src="./images/produto5_1.avif" alt="Sapato">
+            </a>
                 <div>
-                    <h1>Nike Air Force</h1>
-                    <h2>Confortável, excelente para o dia a dia</h2>
-                    <span>R$ 489,99</span>
+                    <h3> Nike LeBron Witness 8</h3>
+                    <p>Confortável, excelente para praticar esportes</p>
+                    <span>R$ 949,99</span>
                     <button>Adicionar ao Carrinho</button>
                 </div>     
             </div>    
             <div class="card">
-                <img src="./images/sapato6.png" alt="Sapato">
+                <a href="/PRODUTOS/produto6.html">
+                <img src="/images/produto6_1.avif" alt="Sapato">
+            </a>
                 <div>
-                    <h1>Nike Air Max 97</h1>
-                    <h2>Confortável, excelente para o dia a dia</h2>
-                    <span>R$ 508,99</span>
+                    <h3> Nike Air Max Dn</h3>
+                    <p>Proporcionando conforto de cima a baixo com um design tátil </p>
+                    <span>R$ 949,99</span>
                     <button>Adicionar ao Carrinho</button>
                 </div>     
             </div>
-        
-        <div class="card">
-            <img src="./images/sapato7.png" alt="Sapato">
-            <div>
-                <h1>Scarpin Fendi Lizard Preto</h1>
-                <h2>O modelo com salto alto e plataforma.</h2>
-                <span>R$ 1.200,00</span>
-                <button>Adicionar ao Carrinho</button>
-            </div>     
         </div>
     </div>
 
@@ -245,12 +251,14 @@
         <img src="./images/musica-mulher-feliz-por-fones-de-ouvido-vestindo-roupa-azul-elegantes-formadores-sentado-na-rosa_273443-294.jpg" alt="Tendências 2024">
         <h3>Tendências de calçados para 2024</h3>
         <p>Veja as principais tendências que dominarão o mundo dos calçados este ano...</p>
-        <button>Ler mais</button>
+        <a href="/DICAS/dicas.html">
+        <button >Ler mais</button>
+    </a>
     </div>
 </section>
 <section class="banner">
 
-    <div>
+    <div class="banner-footer">
          <!-- Contêiner para a imagem do banner -->
     <img src="./images/banner meio site.png" alt="">
     </div>
@@ -266,22 +274,45 @@
 
     <!-- Seção de rodapé da página, contendo informações de contato -->
     <footer>
-    <dl>
-        <!-- <dl> é usado para criar uma lista de definição. Ele é composto por dois tipos principais de elementos:-->
-        
-        <dt>E-mail</dt> 
-        <!-- dt Termo da definição: E-mail -->
-        <dd>email@gmail.com</dd>
-        <!-- dd Descrição correspondente ao termo anterior, que é o endereço de e-mail -->
-        
-        <dt>Telefone</dt>
-        <!-- Termo da definição: Telefone -->
-        <dd>(99) 9 9999-9999</dd>
-        <!-- Descrição correspondente ao termo anterior, que é o número de telefone -->
-    </dl>
+        <div class="container-footer">
+            <div class="footer-content">
 
-    <p>© 2024 ShoesBr Todos os direitos reservados.</p>
-    <!-- Parágrafo com direitos autorais da empresa ShoesBr -->
+                <div class="footer-logo">
+                    <img src="/images/logo-removebg-preview.png" alt="logo">
+                    <p> </p>
+                </div>
+                <div class="footer-link">
+                    <h3>Quick links</h3>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">CONTACT</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact us</h3>
+                   <ul>
+                    <li>
+                        <span class="material-symbols-outlined">location_on</span>
+                        123 Main  Street
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">call</span>
+                        1234567
+                    </li> <li>
+                        <span class="material-symbols-outlined">email</span>
+                        contact@hotmail.com
+                    </li>
+                   </ul>
+ 
+                </div>
+            </div>
+
+        </div>
+        <p class="copyright">Copyright &copy;2024-Todos os direitos reservados.</p>
+      
 </footer>
 
 </body>
